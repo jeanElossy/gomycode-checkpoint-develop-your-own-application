@@ -1,4 +1,5 @@
 import React from 'react'
+import Connexion from './Connexion';
 
 const header = () => {
     return (
@@ -42,7 +43,10 @@ const header = () => {
 
                                 <div className="button d-flex gap-3">
                                     <div className="connexion">
-                                        <button className="btn btn-outline-primary">Connexion</button>
+                                       
+                                        <Connexion 
+                                            className="con-toggle"
+                                        />
                                     </div>
                                     <div className="inscription">
                                         <button className="btn">Inscritpion</button>
@@ -81,4 +85,3 @@ const header = () => {
 }
 
 export default header;
-
