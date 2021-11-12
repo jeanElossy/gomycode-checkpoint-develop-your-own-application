@@ -1,0 +1,39 @@
+
+*, *::after, *::before{
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    overflow-y: auto;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: rgba(184, 183, 183, 0.336);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 50px;
+}
+
+
+$colorBlue: blue;
+$colorBlack: #333;
+
+a{
+    text-decoration: none;
+    color: $colorBlack;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

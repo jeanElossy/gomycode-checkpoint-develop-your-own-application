@@ -1,0 +1,113 @@
+.home {
+    position: relative;
+
+    .text__image{
+
+        .row {
+
+            .text{
+                padding: 8rem 0 0 5rem;
+                .success {
+                    button {
+                        background: rgb(243, 9, 97);
+                        border-radius: 20px;
+                        border: none;
+                        &:hover{
+                            background: rgb(243, 97, 97);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .market {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        background: $colorBlue;
+        bottom: 50%;
+        right: 0;
+        z-index: 100;
+        @include center;
+        border-radius: 15px 0 0 15px;
+        color: white;
+        cursor: pointer;
+        span {
+            color: white;
+            position: absolute;
+            top: 4%;
+            right: 18px;
+            width: 15px;
+            height: 15px;
+            background: red;
+            @include center;
+            border-radius: 15px;
+            padding: .6rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .icon--market{
+            font-size: 1.5rem;
+        }
+    }
+
+    .produits {
+        margin-top: 30px;
+        margin-bottom: 3rem;
+        .card{
+            border-radius: 10px;
+            height: 190px;
+            width: 20rem;
+            
+        }
+    }
+    .products{
+
+        .new {
+            position: relative;
+            cursor: pointer;
+            
+            &::after {
+                position: absolute;
+                content: "";
+                background: rgba(128, 128, 128, 0.363);
+                width: 100%;
+                height: 1px;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .card{
+            margin: 1rem .5rem 1rem;
+            border-radius: 10px;
+
+            button {
+                
+                &:nth-child(1) {
+                    border-radius: 10px;
+                    padding: .5rem 2.4rem;
+                    
+                }
+                &:nth-child(2){
+                    border-radius: 15px;
+                    padding: .5rem 1rem;
+                    
+                }
+            }
+        } 
+        .voir-plus {
+            
+            button{
+                border-radius: 15px;
+                padding: .5rem 2.7rem;
+                font-weight: 600;
+            }
+        }  
+    }
+}
+
+

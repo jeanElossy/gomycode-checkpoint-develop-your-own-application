@@ -1,0 +1,33 @@
+.header {
+    .container{
+
+        .row{
+
+            .logo{
+                span{
+                    font-size: 1.6rem;
+                }
+            }
+            select{
+                border: none;
+            }
+            .button{
+                
+                .connexion {
+                    button {
+                        border: 1px solid $colorBlue;
+                    }
+                }
+                .inscription {
+                    button{
+                        background: $colorBlue;
+                        color: white;
+                    }
+                }
+                button {
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
