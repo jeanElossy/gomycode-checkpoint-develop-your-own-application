@@ -50,6 +50,27 @@
                 height: 550px;
             }
         }
+        .ins-toggle{
+
+            .overlay{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                // background: rgba(53, 52, 52, 0.123);
+                display: none;
+                z-index: 999;
+            }
+            .modal-content {
+                position: absolute;
+                top: 7%;
+                left: 50%;
+                transform: translate(-50%, -20%);
+                width: 400px;
+                height: 550px;
+            }
+        }
 
         .show{
             display: initial;
@@ -58,7 +79,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background: rgba(31, 30, 30, 0.733);
+            background: rgba(17, 16, 16, 0.733);
         }
     }
 }

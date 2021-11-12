@@ -1,5 +1,6 @@
 import React from 'react'
 import Connexion from './Connexion';
+import Inscritpion from './Inscription';
 
 const header = () => {
     return (
@@ -43,13 +44,14 @@ const header = () => {
 
                                 <div className="button d-flex gap-3">
                                     <div className="connexion">
-                                       
                                         <Connexion 
                                             className="con-toggle"
                                         />
                                     </div>
                                     <div className="inscription">
-                                        <button className="btn">Inscritpion</button>
+                                        <Inscritpion 
+                                            className="ins-toggle"
+                                        />
                                     </div>
                                 </div>
 
