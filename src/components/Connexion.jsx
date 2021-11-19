@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { AiOutlineGooglePlus } from 'react-icons/ai'
+import { FaFacebookF } from 'react-icons/fa'
+
 
 const Connexion = ( { className }) => {
 
@@ -35,10 +38,10 @@ const Connexion = ( { className }) => {
                         <div className="ms-4">Vous n'avez pas de compte ? <span><a href="/" className="span">Inscrivez-vous</a></span></div>
                         <div className="d-flex justify-content-center gap-3 mt-3">
                             <button className="btn-reseau">
-                                <span></span> <strong>Connexon avec Google</strong>
+                                <span><AiOutlineGooglePlus /></span> <strong>Connexon avec Google</strong>
                             </button>
                             <button className="btn-reseau">
-                                <span></span> <strong>Connexon avec Facebook</strong>
+                                <span><FaFacebookF /></span> <strong>Connexon avec Facebook</strong>
                             </button>
                         </div>
                     </div> 
@@ -53,7 +56,7 @@ const Connexion = ( { className }) => {
                                 id="email"
                                 placeholder="Adresse email"
                                 className="form-control"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                             <input 
                                 type="password" 
@@ -61,13 +64,13 @@ const Connexion = ( { className }) => {
                                 id="password"
                                 placeholder="Mot de passe"
                                 className="form-control mt-3"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                             <input 
                                 type="submit" 
                                 value="Se connecter"
                                 className="btn text-white mt-3"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                         </form>
                         <div className="m-3">

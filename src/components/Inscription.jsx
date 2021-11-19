@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { AiOutlineGooglePlus } from 'react-icons/ai'
+import { FaFacebookF } from 'react-icons/fa'
 
 const Inscritpion = ( { className }) => {
 
@@ -17,13 +19,14 @@ const Inscritpion = ( { className }) => {
             <div className={ toggle ? "show modal fade " : "overlay" } id="overlay">
                     <div className="modal-content">
                         <div>
-                            <h5 className="modal-title mt-3 ms-4 text-dark" id="Inscritpion">Inscription</h5>
+                            <h5 className="modal-title mt-3 ms-4" id="Inscritpion">Inscription</h5>
                             <div>
                                 <button 
-                                    type="button" 
-                                    className="btn-close"
+                                    type="button"
+                                    className="btn-close d-flex justify-content-center align-items-center"
                                     onClick={(e) => setToggle(!toggle)}
                                     >
+                                    x
                                 </button>
                             </div>
                         </div>
@@ -35,10 +38,10 @@ const Inscritpion = ( { className }) => {
                             <div className="ms-4">Vous avez un compte ? <span><a href="/" className="span">Connectez-vous</a></span></div>
                             <div className="d-flex justify-content-center gap-3 mt-3">
                                 <button className="btn-reseau">
-                                    <span></span> <strong>Connexon avec Google</strong>
+                                    <span><AiOutlineGooglePlus /></span> <strong>Connexon avec Google</strong>
                                 </button>
                                 <button className="btn-reseau">
-                                    <span></span> <strong>Connexon avec Facebook</strong>
+                                    <span><FaFacebookF /></span> <strong>Connexon avec Facebook</strong>
                                 </button>
                             </div>
                         </div>
@@ -53,7 +56,7 @@ const Inscritpion = ( { className }) => {
                                 id="nom"
                                 placeholder="Nom"
                                 className="form-control"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                             <input 
                                 type="text" 
@@ -61,7 +64,7 @@ const Inscritpion = ( { className }) => {
                                 id="prenom"
                                 placeholder="Prenom(s)"
                                 className="form-control mt-3"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                             <input 
                                 type="Email" 
@@ -69,7 +72,7 @@ const Inscritpion = ( { className }) => {
                                 id="email"
                                 placeholder="Email"
                                 className="form-control mt-3"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                             <input 
                                 type="password" 
@@ -77,14 +80,14 @@ const Inscritpion = ( { className }) => {
                                 id="password"
                                 placeholder="Mot de passe"
                                 className="form-control mt-3"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                             
                             <select 
                                 name="pays" 
                                 id="pays"
                                 className="select-control mt-3"
-                                style={{width: "415px", border: "1px solid rgba(165, 164, 164, 0.600)", padding: ".4rem 0", borderRadius: "5px"}}
+                                style={{width: "460px", border: "1px solid rgba(165, 164, 164, 0.600)", padding: ".4rem 0", borderRadius: "5px"}}
                             >
                                 <option value="Pays">Pays</option>
                                 <option value="Ci">Cote d'Ivoire</option>
@@ -95,7 +98,7 @@ const Inscritpion = ( { className }) => {
                                 name="ville" 
                                 id="ville"
                                 className="select-control mt-3"
-                                style={{width: "415px", border: "1px solid rgba(165, 164, 164, 0.600)", padding: ".4rem 0", borderRadius: "5px"}}
+                                style={{width: "460px", border: "1px solid rgba(165, 164, 164, 0.600)", padding: ".4rem 0", borderRadius: "5px"}}
                             >
                                 <option value="Ville">Ville</option>
                                 <option value="Abidjan">Abidjan</option>
@@ -106,7 +109,7 @@ const Inscritpion = ( { className }) => {
                                 type="submit" 
                                 value="S'inscrire"
                                 className="btn btn-primary mt-3"
-                                style={{width: "415px"}}
+                                style={{width: "460px"}}
                             />
                         </form>
                     </div>

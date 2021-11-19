@@ -1,14 +1,17 @@
+import React from "react";
 import Home from './pages/Home';
+// import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 const App = () => {
   
   return (
-    <div className="App">
-      <Home />
-    </div>
+  
+        
+          <Home />
+      
   );
 }
-export default App;
 
+export default App;
 
 
