@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: font-1;
+    src: url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+}
+
 *, *::after, *::before{
     outline: none;
     box-sizing: border-box;
@@ -9,6 +14,7 @@ body{
     width: 100%;
     overflow-y: auto;
     height: 100%;
+    font-family: font-1;
 }
 
 body::-webkit-scrollbar {
@@ -20,11 +26,13 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background: blue;
     border-radius: 50px;
+    
 }
 
 
 $colorBlue: blue;
 $colorBlack: #333;
+
 
 a{
     text-decoration: none;

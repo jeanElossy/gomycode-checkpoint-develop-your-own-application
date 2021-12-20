@@ -1,14 +1,22 @@
 import React from "react";
+
+import {
+  Routes,
+  Route
+} from "react-router-dom";
+
 import Home from './pages/Home';
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Vetements from "./pages/Vetements";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   
   return (
-  
-        
-          <Home />
-      
+    <Routes>
+      <Route path="/" exact element={<Home />} />
+      <Route path="vetements" exact element={<Vetements />} />
+      <Route path="notFound" element={<NotFound />} />
+    </Routes>
   );
 }
 

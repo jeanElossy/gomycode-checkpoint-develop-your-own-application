@@ -1,13 +1,14 @@
 import React from 'react'
 import Connexion from './Connexion';
 import Inscritpion from './Inscription';
+import { Link } from "react-router-dom";
 
 const header = () => {
     return (
         <div className="header bg-light">
 
                     <div className="container">
-                        <div className="row p-4 justify-content-center align-items-center">
+                        <div className="row pt-4 justify-content-center align-items-center">
 
                             <form action="/" className="form-groups col-12 col-md-4">
                                 <input 
@@ -67,9 +68,7 @@ const header = () => {
                         </a>
                     </div>
                     <div>
-                        <a href="/">
-                            Vetements
-                        </a>
+                        <Link to="/vetements">Vêtements</Link>
                     </div>
                     <div>
                         <a href="/">
