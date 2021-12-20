@@ -4,7 +4,8 @@
         .row{
             
             background: url("../medias/fond-acceuil.jpg") center/cover;
-            height: 400px;
+            object-position: center;
+            height: 300px;
             border-radius: 10px;
             position: relative;
 
@@ -14,7 +15,7 @@
                 left: 0;
                 bottom: 0;
                 right: 0;
-                background: rgba(19, 17, 17, 0.411);
+                background: rgba(19, 17, 17, 0.623);
                 border-radius: 10px;
                 z-index: 1;
                 

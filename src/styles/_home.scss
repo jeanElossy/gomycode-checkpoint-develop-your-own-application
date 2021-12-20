@@ -132,46 +132,6 @@
             }
         }
         
-        .product {
-            margin-left: px;
-        }
-
-        .card{
-            margin: 1rem .5rem 1rem;
-            border-radius: 10px;
-
-            button {
-                
-                &:nth-child(1) {
-                    border-radius: 10px;
-                    padding: .5rem 2.4rem;
-                    
-                }
-                &:nth-child(2){
-                    border-radius: 15px;
-                    padding: .5rem 1rem;
-                    
-                }
-            }
-            .images {
-                transition: .2s ease-in-out;
-            }
-            .images:hover {
-                transform: scale(1.1);
-            }
-        } 
-
-
-        .voir-plus {
-            
-            button{
-                border-radius: 15px;
-                padding: .5rem 2.7rem;
-                font-weight: 600;
-            }
-        }  
-    }
-
     // styles composant market 
 
     .panier {
@@ -186,3 +146,4 @@
 }
 
 
+}
