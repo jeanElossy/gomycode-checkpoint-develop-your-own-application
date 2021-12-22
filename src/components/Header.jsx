@@ -68,7 +68,7 @@ const header = () => {
                         </a>
                     </div>
                     <div>
-                        <Link to="/vetements">Vêtements</Link>
+                        <Link to="vetements" activeClassName="nav-active">Vêtements</Link>
                     </div>
                     <div>
                         <a href="/">
