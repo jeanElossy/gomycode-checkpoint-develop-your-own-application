@@ -1,149 +1,141 @@
 .home {
-    position: relative;
+	position: relative;
 
-    .text__image{
+	.text__image {
+		background: $colorBlue;
+		.row {
+			.text {
+				padding: 8rem 0 0 5rem;
+				.success {
+					button {
+						background: rgb(247, 18, 132);
+						border-radius: 20px;
+						border: none;
+						&:hover {
+							background: rgb(243, 97, 97);
+						}
+					}
+				}
+			}
+		}
+	}
 
-        .row {
+	.market {
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		background: $colorBlue;
+		bottom: 50%;
+		right: 0;
+		z-index: 100;
+		@include center;
+		border-radius: 15px 0 0 15px;
+		color: white;
+		cursor: pointer;
+		span {
+			color: white;
+			position: absolute;
+			top: 4%;
+			right: 18px;
+			width: 15px;
+			height: 15px;
+			background: red;
+			@include center;
+			border-radius: 15px;
+			padding: .6rem;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.icon--market {
+			font-size: 1.5rem;
+		}
+	}
+	.overlay {
+		position: absolute;
+		display: none;
+	}
+	.market-content {
+		width: 400px;
+		height: 100%;
+		background: ivory;
+		position: absolute;
+		right: 0;
+	}
+	.show {
+		position: absolute;
+		display: initial;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(34, 32, 32, 0.459);
+	}
 
-            .text{
-                padding: 8rem 0 0 5rem;
-                .success {
-                    button {
-                        background: rgb(243, 9, 97);
-                        border-radius: 20px;
-                        border: none;
-                        &:hover{
-                            background: rgb(243, 97, 97);
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
+	.produits {
+		margin-top: 30px;
+		margin-bottom: 3rem;
+		.card {
+			border-radius: 10px;
+			height: 190px;
+			width: 20rem;
+			transition: .3s ease-in-out;
 
-    .market {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        background: $colorBlue;
-        bottom: 50%;
-        right: 0;
-        z-index: 100;
-        @include center;
-        border-radius: 15px 0 0 15px;
-        color: white;
-        cursor: pointer;
-        span {
-            color: white;
-            position: absolute;
-            top: 4%;
-            right: 18px;
-            width: 15px;
-            height: 15px;
-            background: red;
-            @include center;
-            border-radius: 15px;
-            padding: .6rem;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .icon--market{
-            font-size: 1.5rem;
-        }
-    }
-    .overlay {
-        position: absolute;
-        display: none;
-    }
-    .market-content {
-        width: 400px;
-        height: 100%;
-        background: ivory;
-        position: absolute;
-        right: 0;
-    }
-    .show {
-        position: absolute;
-        display: initial;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(34, 32, 32, 0.459);
-    }
+			&:hover {
+				background: $colorBlue;
+				box-shadow: 0 0 5px 3px rgba(121, 120, 120, 0.445);
+				transform: scale(1.07);
+			}
+			&:hover .row h6,
+			&:hover .details a {
+				color: white;
 
-    .produits {
-        margin-top: 30px;
-        margin-bottom: 3rem;
-        .card {
-            border-radius: 10px;
-            height: 190px;
-            width: 20rem;
-            transition: .3s ease-in-out;
+				// 3 articles au millieu
+			}
+			.details {
+				display: none;
+				transition: all 1s ease-in-out;
+			}
+			&:hover .details {
+				display: initial;
+				transform: translateY(-30px);
+				font-size: 1.1rem;
+				font-weight: 500;
 
-            &:hover {
-                background: $colorBlue;
-                box-shadow: 0 0 5px 3px rgba(121, 120, 120, 0.445);
-                transform:  scale(1.07);
-            }
-            &:hover .row h6, &:hover .details a {
-                color: white;
+				&:hover a {
+					padding: 2px;
+				}
+			}
 
-            // 3 articles au millieu
-            }
-            .details {
-                display: none;
-                transition: all 1s ease-in-out;
+			// fin 3 articles
+		}
+	}
 
+	// styles composant articles
+	.products {
+		.new {
+			position: relative;
+			cursor: pointer;
 
-            }
-            &:hover .details {
-                display: initial;
-                transform: translateY(-30px);
-                font-size: 1.1rem;
-                font-weight: 500;
+			&::after {
+				position: absolute;
+				content: "";
+				background: rgba(128, 128, 128, 0.363);
+				width: 100%;
+				height: 1px;
+				bottom: -15px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
 
-                &:hover a {
-                    padding: 2px;
-                }
-            }
+		// styles composant market
 
-            // fin 3 articles
-        }
-    }
-
-    // styles composant articles 
-    .products{
-
-        .new {
-            position: relative;
-            cursor: pointer;
-            
-            &::after {
-                position: absolute;
-                content: "";
-                background: rgba(128, 128, 128, 0.363);
-                width: 100%;
-                height: 1px;
-                bottom: -15px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-        
-    // styles composant market 
-
-    .panier {
-
-        span {
-            width: 100%;
-            height: 1px;
-            background: gray;
-
-        }
-    }
-}
-
-
+		.panier {
+			span {
+				width: 100%;
+				height: 1px;
+				background: gray;
+			}
+		}
+	}
 }

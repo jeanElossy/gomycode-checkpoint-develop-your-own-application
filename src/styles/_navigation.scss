@@ -1,0 +1,22 @@
+.navigation {
+
+	a {
+		margin: 5px;
+		padding: 5px;
+		position: relative;
+	}
+	.nav-active {
+
+		&::after {
+			content: "";
+			background: blue;
+			bottom: 1px;
+			width: 85%;
+			height: 2px;
+			left: 10%;
+			transform: translateX(-50%);
+			position: absolute;
+		}
+	}
+	
+}

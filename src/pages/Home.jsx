@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
+
 import { FaBabyCarriage } from 'react-icons/fa';
 import Articles from '../components/Articles';
+import Header from "../components/Header";
 import Footer from '../components/Footer';
 import Market from '../components/Market';
+
 
 const Home = () => {
 	const [ market, setMarket ] = useState(false);
@@ -17,9 +19,10 @@ const Home = () => {
 
 	return (
 		<div className="home">
+			
 			<Header />
 
-			<div className="text__image container-fluid bg-primary">
+			<div className="text__image container-fluid ">
 				<div className="row">
 					<div className="text col-12 col-md-7 text-white">
 						<h1>
@@ -67,7 +70,7 @@ const Home = () => {
 						<div className="details">
 							<a href="/"> Plus de detail</a>
 						</div>
-								</div>
+					</div>
 					<div className="col-12 col-md-4 card">
 						<div className="row">
 							<h6 className="col-md-5 p-3">Femmes</h6>
@@ -82,9 +85,8 @@ const Home = () => {
 
 			<Articles className="products" setCount={handleCount} />
 
+
 			<Footer />
-			
-			
 		</div>
 	);
 };

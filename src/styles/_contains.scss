@@ -1,33 +1,30 @@
 .contains {
-    .container{
-        
-        .row{
-            background: url("../medias/fond-acceuil.jpg") top / cover;
-            height: 330px;
-            border-radius: 10px;
-            position: relative;
+	.container {
+		.row {
+			background: url("../medias/fond-acceuil.jpg") top / cover;
+			height: 330px;
+			border-radius: 10px;
+			position: relative;
 
-            .overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                background: rgba(19, 17, 17, 0.616);
-                border-radius: 10px;
-                z-index: 1;
-            }
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background: rgba(19, 17, 17, 0.39);
+				border-radius: 10px;
+				z-index: 1;
+			}
 
-            .h2 {
-                position: absolute;
-                z-index: 2;
-                top: 40%;
-                left: 38%;
-                transform: translate(-50% -50%);
-                font-size: 4rem;
-                
-            }
-        }
-    }
-    
+			.h2 {
+				position: absolute;
+				z-index: 2;
+				top: 40%;
+				left: 38%;
+				transform: translate(-50% -50%);
+				font-size: 4rem;
+			}
+		}
+	}
 }

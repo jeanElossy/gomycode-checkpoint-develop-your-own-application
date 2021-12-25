@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Connexion from './Connexion';
-import Inscritpion from './Inscription';
+
 import Navigation from './Navigation';
 
-const header = () => {
+const HeaderConnect = () => {
+	const [ show, setShow ] = useState(false);
+
 	return (
-		<div className="header bg-light">
-			<div className="container">
+		<div className="header--connect">
+			<div className="container ">
 				<div className="row pt-4 justify-content-center align-items-center">
 					<form action="/" className="form-groups col-12 col-md-4">
 						<input type="search" className="form-control" placeholder="Search" />
 					</form>
 
 					<div className="logo col-12 col-md-4 text-center">
-						<NavLink exact to="/" activeClassName="nav-active">
-							<span className="">LMC-</span>
+						<NavLink exact to="/">
+							<span>LMC-</span>
 							<span>Shop</span>
 						</NavLink>
 					</div>
@@ -41,17 +42,36 @@ const header = () => {
 							</div>
 						</div>
 
-						<div className="button d-flex gap-3">
-							<div className="connexion">
-								<Connexion className="con-toggle" />
-							</div>
-							<div className="inscription">
-								<Inscritpion className="ins-toggle" />
+						<div className="profil d-flex gap-2 align-items-center">
+							<img src="./medias/capture.png" alt="balise" onClick={(e) => setShow(!show)} />
+
+							<div>
+								<h1 className="h6" onClick={(e) => setShow(!show)}>
+									JEAN ELOSSY
+								</h1>
+
+								<div className={show ? 'show p-3' : 'lien'}>
+									<div>
+										<NavLink exact to="/profil">
+											PROFIL
+										</NavLink>
+									</div>
+									<div>
+										<NavLink exact to="/">
+											FAQ
+										</NavLink>
+									</div>
+									<div>
+										<NavLink exact to="/">
+											DECONNEXION
+										</NavLink>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<hr className="ms-5" />
+				<hr className="ms-4" />
 			</div>
 
 			<Navigation />
@@ -59,4 +79,4 @@ const header = () => {
 	);
 };
 
-export default header;
+export default HeaderConnect;

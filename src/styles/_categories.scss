@@ -1,0 +1,86 @@
+.categories {
+	.container-articles {
+		.row {
+			background: url("../medias/cover.png") bottom/ cover;
+			height: 500px;
+			position: relative;
+
+			.text--tilte {
+				position: absolute;
+				top: 20%;
+
+				.form {
+					position: absolute;
+					left: 35%;
+					top: 150%;
+					border: .5px solid rgba(207, 200, 200, 0.418);
+					border-radius: 10px;
+
+					.select {
+						@include center;
+						padding: 0 15px;
+						select {
+							border: none;
+							background: none;
+							color: $colorBlue;
+
+							// css pour enlever la fleche par defaut du boutton select
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							appearance: none;
+						}
+
+						// select::-ms-expand {
+
+						//     display: none; /* supprimer la fléche par défaut en IE 10 et 11 */
+						// }
+					}
+
+					.search {
+						input {
+							padding: .7rem;
+							border: none;
+						}
+					}
+
+					.submit {
+						background: $colorBlue;
+						@include center;
+						padding: 0 20px;
+						border-radius: 0 10px 10px 0;
+						input {
+							border: none;
+							background: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.bloc--info {
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+		.h3 {
+			font-size: 1.4rem;
+			color: $colorBlue;
+		}
+
+		.row {
+			gap: 20px;
+			.card {
+				width: 270px;
+				border-radius: 20px;
+				.icon {
+					font-size: 2rem;
+					color: $colorBlue;
+				}
+			}
+		}
+	}
+
+	.article {
+		border-radius: 20px 20px 0 0;
+	}
+}
