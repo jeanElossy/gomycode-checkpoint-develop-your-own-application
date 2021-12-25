@@ -22,7 +22,7 @@ const Profil = () => {
 						</h1>
 						<h1 className="h5">
 							<NavLink to="/password">
-								<span>Changer de passe</span>
+								<span>Changer de mot de passe</span>
 							</NavLink>
 						</h1>
 						<h1 className="h5">

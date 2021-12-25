@@ -19,7 +19,7 @@ const Password = () => {
                         </h1>
                         <h1 className="h5">
                             <NavLink to="">
-                                <span className="active">Changer de passe</span>
+                                <span className="active">Changer de mot de passe</span>
                             </NavLink>
                         </h1>
                         <h1 className="h5">
