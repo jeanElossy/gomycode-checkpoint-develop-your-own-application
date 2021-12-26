@@ -1,0 +1,24 @@
+.command {
+	.contains {
+		background: rgba(196, 209, 214, 0.26);
+		border-radius: 10px;
+		.row {
+			.coordonnees {
+				a {
+					.active {
+						color: $colorBlue;
+					}
+				}
+			}
+
+			.nav-button {
+
+				a {
+					.btn-2 {
+						color: $colorBlue;
+					}
+				}
+			}
+		}
+	}
+}
