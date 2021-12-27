@@ -1,0 +1,37 @@
+.effectuees {
+	.content {
+		.row {
+			background: white;
+
+			.info--command {
+				div {
+					line-height: 3px;
+				}
+
+				.h6 {
+					color: gray;
+				}
+
+				.btn {
+					background: rgb(240, 8, 124);
+					color: white;
+					border-radius: 15px;
+				}
+			}
+
+			.info--article {
+				.donne {
+					line-height: 5px;
+				}
+			}
+
+			.coordonnees {
+				a {
+					.active {
+						color: $colorBlue;
+					}
+				}
+			}
+		}
+	}
+}

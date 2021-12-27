@@ -1,0 +1,12 @@
+.notFound{
+    background: rgba(0, 0, 255, 0.205);
+    @include center;
+    height: 100vh;
+
+    div {
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}

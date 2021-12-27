@@ -13,8 +13,7 @@ import UniqueProduit from './pages/UniqueProduit';
 import Profil from './pages/Profil';
 import Password from './pages/Password';
 import Command from './pages/Command';
-import Encours from './components/Encours';
-import Effectuees from './components/Effectuees';
+
 
 const App = () => {
 	return (
@@ -27,8 +26,6 @@ const App = () => {
 				<Route exact path="/profil" element={<Profil />} />
 				<Route exact path="/password" element={<Password />} />
 				<Route exact path="/command" element={<Command />} />
-				<Route exact path="/encours" element={<Encours />} />
-				<Route exact path="/effectuees" element={<Effectuees />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</div>

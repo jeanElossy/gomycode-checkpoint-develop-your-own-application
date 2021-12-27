@@ -12,11 +12,18 @@
 			}
 
 			.nav-button {
+				cursor: pointer;
+				.onglets {
+					width: 200px;
+					height: 30px;
+					background: $colorBlue;
+					color: white;
+					
+				}
 
-				a {
-					.btn-2 {
-						color: $colorBlue;
-					}
+				.onglets--active {
+					background: $colorBlue;
+					color: white;
 				}
 			}
 		}
