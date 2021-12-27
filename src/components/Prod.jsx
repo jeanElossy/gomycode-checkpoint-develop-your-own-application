@@ -1,95 +1,11 @@
 import React from 'react';
-import uniqueid from 'uniqueid';
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 const Prod = ({ setCount }) => {
-	const [ data, setData ] = useState([
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		},
-		{
-			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
-			count2: 1500
-		}
-	]);
+
+	const article = useSelector((state) => state.Reducer);
+	const data = article.data;
 
 	return (
 		<div className="prod">

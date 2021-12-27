@@ -18,6 +18,9 @@
 						height: 150px;
 						border-radius: 5px;
 						border: 4px dotted $colorBlue;
+
+						@include center;
+						padding: 20px;
 					}
 
 					form {

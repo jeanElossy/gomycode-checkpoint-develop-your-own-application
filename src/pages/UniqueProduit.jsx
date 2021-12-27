@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Prod from '../components/Prod';
+import { FiShoppingBag } from 'react-icons/fi';
 
 const UniqueProduit = () => {
 	return (
@@ -14,10 +15,7 @@ const UniqueProduit = () => {
 						<div className="img">
 							<img src="./medias/jupe.png" alt="jupe" />
 						</div>
-						<div className="row">
-							<div className="card col-12 col-md-3">
-								<img src="./medias/jupe.png" alt="jupe" />
-							</div>
+						<div className="row justify-content-center gap-4">
 							<div className="card col-12 col-md-3">
 								<img src="./medias/jupe.png" alt="jupe" />
 							</div>
@@ -46,7 +44,9 @@ const UniqueProduit = () => {
 						</div>
 
 						<div className="btn d-flex gap-2 mt-3">
-							<button>Ajouter au panier</button>
+							<button>
+								<FiShoppingBag /> {''} Ajouter au panier
+							</button>
 							<button>Acheter</button>
 						</div>
 					</div>

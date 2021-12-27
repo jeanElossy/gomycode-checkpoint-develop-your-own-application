@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import HeaderConnect from '../components/HeaderConnect';
 import Footer from '../components/Footer';
+import { FaCloudDownloadAlt } from 'react-icons/fa';
 
 const Profil = () => {
 	return (
@@ -33,7 +34,15 @@ const Profil = () => {
 
 						<div className="contains ms-3">
 							<form action="" className="form-groups d-flex flex-column gap-4">
-								<div className="cadre--border" />
+								<div className="cadre--border flex-column">
+									<div className='fs-1'><FaCloudDownloadAlt /></div> 
+
+									<div>
+										<input type="file" name="myImage" accept="image/*" /> <br /><br />
+										<label htmlFor="file">Veuillez télécharger votre photo de profil ici</label>
+									</div>
+									
+								</div>
 								<div>
 									<label htmlFor="nom" className="mb-2">
 										Votre nom

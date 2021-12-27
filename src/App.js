@@ -14,7 +14,6 @@ import Profil from './pages/Profil';
 import Password from './pages/Password';
 import Command from './pages/Command';
 
-
 const App = () => {
 	return (
 		<div>
