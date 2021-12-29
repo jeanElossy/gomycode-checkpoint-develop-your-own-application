@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Panier from "../components/Panier";
 import { FiSearch } from 'react-icons/fi';
 import { FaRegCreditCard } from 'react-icons/fa';
 import { BsCart } from 'react-icons/bs';
@@ -122,6 +122,8 @@ const Categories = () => {
 					</div>
 				</div>
 			</div>
+
+			<Panier />
 
 			<div className="container border border-ligth p-4 article">
 				<div className="row">

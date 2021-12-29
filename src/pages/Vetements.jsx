@@ -4,6 +4,7 @@ import Contains from '../components/Contains';
 import Prod from '../components/Prod';
 import Header from "../components/Header";
 import Footer from '../components/Footer';
+import Panier from '../components/Panier';
 
 // import Panier from '../components/Panier';
 
@@ -14,6 +15,8 @@ const Vetements = () => {
 			<Header />
 
 			<Contains />
+			
+			<Panier />
 
 			<div className="container">
 				<div className="row">

@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Prod from '../components/Prod';
 import { FiShoppingBag } from 'react-icons/fi';
+import { NavLink } from 'react-router-dom';
+import Panier from '../components/Panier';
 
 const UniqueProduit = () => {
 	return (
@@ -47,11 +49,16 @@ const UniqueProduit = () => {
 							<button>
 								<FiShoppingBag /> {''} Ajouter au panier
 							</button>
-							<button>Acheter</button>
+
+							<NavLink to="/livraison">
+								<button>Acheter</button>
+							</NavLink>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+			<Panier />
 
 			<div className="container mt-5 bg-light">
 				<div className="row">

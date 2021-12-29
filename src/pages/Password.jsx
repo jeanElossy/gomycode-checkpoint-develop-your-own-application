@@ -1,33 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import HeaderConnect from '../components/HeaderConnect';
-import Footer from '../components/Footer';
+
+
 
 const Password = () => {
 	return (
 		<div className="password">
-			<HeaderConnect />
-
 			<div className="container contains p-3">
 				<div className="row">
-					<div className="coordonnees col-12 col-md-3">
-						<h1 className="h5">
-							<NavLink to="/profil">
-								<span>Profil</span>
-							</NavLink>
-						</h1>
-						<h1 className="h5">
-							<NavLink to="/password">
-								<span className="active">Changer de mot de passe</span>
-							</NavLink>
-						</h1>
-						<h1 className="h5">
-							<NavLink to="/command">
-								<span>Mes commandes</span>
-							</NavLink>
-						</h1>
-					</div>
-
 					<div className="content col-12 col-md-9">
 						<h2 className="h4 mb-4">Changer de mot de passe</h2>
 
@@ -68,7 +47,7 @@ const Password = () => {
 				</div>
 			</div>
 
-			<Footer />
+			
 		</div>
 	);
 };

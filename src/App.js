@@ -1,18 +1,13 @@
 import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-import { Routes, Route } from 'react-router-dom';
-
-// import Header from "./components/Header";
 import Home from './pages/Home';
 import Vetements from './pages/Vetements';
 import NotFound from './pages/NotFound';
-// import Footer from './components/Footer';
 import Categories from './pages/Categories';
 import UniqueProduit from './pages/UniqueProduit';
-// import HeaderConnect from './components/HeaderConnect';
-import Profil from './pages/Profil';
-import Password from './pages/Password';
-import Command from './pages/Command';
+import Livraison from './components/Livraison';
+import Onglets from './components/Onglets';
 
 const App = () => {
 	return (
@@ -22,9 +17,13 @@ const App = () => {
 				<Route exact path="/vetements" element={<Vetements />} />
 				<Route exact path="/categories" element={<Categories />} />
 				<Route exact path="/details" element={<UniqueProduit />} />
-				<Route exact path="/profil" element={<Profil />} />
-				<Route exact path="/password" element={<Password />} />
-				<Route exact path="/command" element={<Command />} />
+				<Route exact path="/profil" element={<Onglets />} />
+
+				<Route exact path="/livraison" element={<Livraison />} />
+				
+				
+				
+
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</div>

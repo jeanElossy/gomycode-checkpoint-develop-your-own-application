@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 
-import { FaBabyCarriage } from 'react-icons/fa';
 import Articles from '../components/Articles';
-import Header from "../components/Header";
+import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Market from '../components/Market';
 
+import Panier from '../components/Panier';
 
 const Home = () => {
-	const [ market, setMarket ] = useState(false);
-
 	const [ count, setCount ] = useState(0);
 
 	const handleCount = (e) => {
@@ -19,7 +16,6 @@ const Home = () => {
 
 	return (
 		<div className="home">
-			
 			<Header />
 
 			<div className="text__image container-fluid ">
@@ -42,14 +38,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<div className="market" onClick={(e) => setMarket(!market)}>
-				<span>{count}</span>
-				<FaBabyCarriage className="icon--market" />
-			</div>
-
-			<div className={market ? 'show modal' : 'overlay'} id="overlay">
-				<Market setMarket={setMarket} market={market} count={count} className="panier" />
-			</div>
+			<Panier />
 
 			<div className="produits container">
 				<div className="row justify-content-center gap-5">
@@ -84,7 +73,6 @@ const Home = () => {
 			</div>
 
 			<Articles className="products" setCount={handleCount} />
-
 
 			<Footer />
 		</div>

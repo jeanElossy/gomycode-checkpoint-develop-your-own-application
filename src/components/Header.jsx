@@ -14,7 +14,7 @@ const header = () => {
 					</form>
 
 					<div className="logo col-12 col-md-4 text-center">
-						<NavLink exact to="/" activeClassName="nav-active">
+						<NavLink exact to="/">
 							<span className="">LMC-</span>
 							<span>Shop</span>
 						</NavLink>

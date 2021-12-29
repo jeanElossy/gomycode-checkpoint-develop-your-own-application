@@ -1,8 +1,8 @@
-import { GET_POSTS } from "../actions/get.action";
+import { GET_POSTS } from '../actions/get.action';
 import uniqueid from 'uniqueid';
 
 const initialState = {
-    data : [
+	data: [
 		{
 			id: uniqueid,
 			img: 'medias/5.png',
@@ -86,18 +86,18 @@ const initialState = {
 			name: 'Jupe volante',
 			count1: 3500,
 			count2: 1500
-		}]
+		}
+	]
 };
 
 const Reducer = (state = initialState, action) => {
+	switch (action.type) {
+		case GET_POSTS:
+			return action.payload;
 
-    switch(action.type){
-        
-        case GET_POSTS:
-            return action.payload
+		default:
+			return state;
+	}
+};
 
-        default:
-            return state
-    }
-}
 export default Reducer;

@@ -37,7 +37,7 @@ const Inscritpion = ({ className }) => {
 								</a>
 							</span>
 						</div>
-						<div className="d-flex justify-content-center gap-3 mt-3">
+						<div className="d-flex justify-content-center gap-2 mt-3">
 							<button className="btn-reseau">
 								<span>
 									<AiOutlineGooglePlus />

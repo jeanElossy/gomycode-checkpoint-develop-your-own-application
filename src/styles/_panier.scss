@@ -1,0 +1,89 @@
+.panier {
+	.market {
+		position: fixed;
+		width: 60px;
+		height: 60px;
+		background: $colorBlue;
+		bottom: 50%;
+		right: 0;
+		z-index: 100;
+		@include center;
+		border-radius: 15px 0 0 15px;
+		color: white;
+		cursor: pointer;
+		span {
+			color: white;
+			position: absolute;
+			top: 4%;
+			right: 18px;
+			width: 15px;
+			height: 15px;
+			background: red;
+			@include center;
+			border-radius: 15px;
+			padding: .6rem;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.icon--market {
+			font-size: 1.5rem;
+		}
+	}
+	.overlay {
+		position: absolute;
+		display: none;
+	}
+	.market-content {
+		width: 400px;
+		height: 100%;
+		background: ivory;
+		position: absolute;
+		right: 0;
+
+		.coupon {
+			position: absolute;
+			bottom: 0;
+			h1 {
+				color: $colorBlue;
+			}
+			form {
+				background: $colorBlue;
+				padding: 7px 10px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-radius: 30px;
+				margin: 10px;
+				width: 380px;
+				input[type="text"] {
+					width: 120px;
+					border-radius: 30px;
+					border: none;
+
+					&:focus {
+						box-shadow: none;
+					}
+					&::placeholder {
+						color: $colorBlue;
+						font-weight: bold;
+						text-align: center;
+						font-size: 1.1rem;
+					}
+				}
+
+				label {
+					color: white;
+				}
+			}
+		}
+	}
+	.show {
+		position: absolute;
+		display: initial;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(34, 32, 32, 0.459);
+	}
+}

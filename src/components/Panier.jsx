@@ -13,14 +13,14 @@ const Panier = () => {
 	};
 
 	return (
-		<div className="">
+		<div className="panier">
 			<div className="market" onClick={(e) => setMarket(!market)}>
 				<span>{count}</span>
 				<FaBabyCarriage className="icon--market" />
 			</div>
 
 			<div className={market ? 'show modal' : 'overlay'} id="overlay">
-				<Market setMarket={setMarket} market={market} count={count} className="panier" />
+				<Market setMarket={setMarket} market={market} count={count} />
 			</div>
 		</div>
 	);

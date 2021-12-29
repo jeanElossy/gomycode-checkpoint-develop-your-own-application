@@ -1,0 +1,26 @@
+.onglets {
+
+    .element {
+        background: rgba(196, 209, 214, 0.26);
+        border-radius: 10px;
+    }
+
+    .button {
+        cursor: pointer;
+
+        .ongl--avtive {
+            color: $colorBlue;
+        }
+    }
+
+
+    .delete {
+        line-height: 6px;
+        button {
+            border: none;
+            background: none;
+            color: $colorBlue;
+            padding: 0;
+        }
+    }
+}

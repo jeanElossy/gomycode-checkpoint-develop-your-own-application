@@ -1,47 +1,27 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import HeaderConnect from '../components/HeaderConnect';
-import Footer from '../components/Footer';
+
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 
 const Profil = () => {
 	return (
 		<div className="profil">
-			<HeaderConnect />
-
 			<div className="container p-3 content">
 				<div className="row">
-					<div className="coordonnees col-12 col-md-3">
-						<h1 className="h5">
-							<NavLink to="/profil">
-								<span className="active">Profil</span>
-							</NavLink>
-						</h1>
-						<h1 className="h5">
-							<NavLink to="/password">
-								<span>Changer de mot de passe</span>
-							</NavLink>
-						</h1>
-						<h1 className="h5">
-							<NavLink to="/command">
-								<span>Mes commandes</span>
-							</NavLink>
-						</h1>
-					</div>
-
 					<div className="content__coordonnees col-12 col-md-9">
 						<h2 className="h4 mb-4">Profil</h2>
 
 						<div className="contains ms-3">
 							<form action="" className="form-groups d-flex flex-column gap-4">
 								<div className="cadre--border flex-column">
-									<div className='fs-1'><FaCloudDownloadAlt /></div> 
+									<div className="fs-1">
+										<FaCloudDownloadAlt />
+									</div>
 
 									<div>
-										<input type="file" name="myImage" accept="image/*" /> <br /><br />
+										<input type="file" name="myImage" accept="image/*" /> <br />
+										<br />
 										<label htmlFor="file">Veuillez télécharger votre photo de profil ici</label>
 									</div>
-									
 								</div>
 								<div>
 									<label htmlFor="nom" className="mb-2">
@@ -107,14 +87,8 @@ const Profil = () => {
 						</div>
 					</div>
 				</div>
-				<div className="delete my-5">
-					<h3 className="h4">Supprimer votre compte </h3>
-					<p>Cette action entrainera la suppression de toute vos données personnelles.</p>
-					<button>Supprimer mon compte</button>
-				</div>
-			</div>
 
-			<Footer />
+			</div>
 		</div>
 	);
 };
