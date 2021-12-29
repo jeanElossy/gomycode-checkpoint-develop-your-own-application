@@ -1,6 +1,7 @@
 import { GET_POSTS } from '../actions/get.action';
 import uniqueid from 'uniqueid';
 
+
 const initialState = {
 	data: [
 		{

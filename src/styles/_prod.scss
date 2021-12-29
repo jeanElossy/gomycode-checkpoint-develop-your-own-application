@@ -4,7 +4,7 @@
 
 		.card {
 			border-radius: 10px;
-
+			height: 300px;
 			button {
 				&:nth-child(1) {
 					border-radius: 10px;
@@ -16,11 +16,20 @@
 				// 	padding: .5rem .3rem;
 				// }
 			}
-			.images {
-				transition: .2s ease-in-out;
+			.h6{
+				font-size: 1rem;
 			}
-			.images:hover {
-				transform: scale(1.1);
+			.image {
+				transition: .4s ease-in-out;
+				text-align: center;
+
+				img {
+					width: 10rem;
+					height: 12rem;
+				}
+			}
+			.image:hover {
+				transform: scale(1.06);
 			}
 
 			a {
