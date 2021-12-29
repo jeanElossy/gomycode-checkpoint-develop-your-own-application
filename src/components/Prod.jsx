@@ -32,8 +32,8 @@ const Prod = ({ setCount }) => {
 			<div className="row">
 				{listOfProduct.map((item) => {
 					return (
-						<div className="card p-4" style={{ width: '16rem', height: '24rem' }} key={item.id}>
-							<div className="image mb-3">
+						<div className="card p-2" style={{ width: '16rem', height: '24rem' }} key={item.id}>
+							<div className="image mb-2">
 								<img src={item.image} alt="" />
 							</div>
 
