@@ -28,9 +28,24 @@
 
 			.product {
 				.row {
+					.img {
+						width: 200px;
+						height: 200px;
+						img {
+							width: 200px;
+							height: 200px;
+						}	
+					}
 					.card {
 						border-color: $colorBlue;
 						border-radius: 10px;
+
+						width: 170px;
+						height: 150px;
+						img {
+							width: 140px;
+							height: 140px;
+						}
 					}
 				}
 			}

@@ -26,7 +26,7 @@ const Prod = ({ setCount }) => {
 		};
 		getData();
 	}, []);
-	console.log(listOfProduct);
+	// console.log(listOfProduct);   
 
 
 	return (
