@@ -1,6 +1,7 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
+// import AOS from 'aos';
+// AOS.init();
 import Home from './pages/Home';
 import Vetements from './pages/Vetements';
 import NotFound from './pages/NotFound';
@@ -12,7 +13,6 @@ import Onglets from './components/Onglets';
 const App = () => {
 
 
-	
 	return (
 		<div>
 			<Routes>
@@ -23,10 +23,7 @@ const App = () => {
 				<Route exact path="/profil" element={<Onglets />} />
 
 				<Route exact path="/livraison" element={<Livraison />} />
-				
-				
-				
-
+	 
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</div>
