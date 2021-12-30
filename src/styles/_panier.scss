@@ -33,11 +33,13 @@
 		position: absolute;
 		display: none;
 	}
+
+
 	.market-content {
 		width: 400px;
-		height: 100%;
+		height: 100vh;
 		background: ivory;
-		position: absolute;
+		position: fixed;
 		right: 0;
 
 		.coupon {

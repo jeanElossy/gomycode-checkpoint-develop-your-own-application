@@ -9,11 +9,11 @@ const header = () => {
 		<div className="header bg-light">
 			<div className="container">
 				<div className="row pt-4 justify-content-center align-items-center">
-					<form action="/" className="form-groups col-12 col-md-4">
-						<input type="search" className="form-control" placeholder="Search" />
+					<form action="/" className="form-groups col-12 col-md-3">
+						<input type="search" className="form-control " placeholder="Search" />
 					</form>
 
-					<div className="logo col-12 col-md-4 text-center">
+					<div className="logo col-12 col-md-4 ms-5 text-center">
 						<NavLink exact to="/">
 							<span className="">LMC-</span>
 							<span>Shop</span>
@@ -41,17 +41,12 @@ const header = () => {
 							</div>
 						</div>
 
-						<div className="button d-flex gap-3">
-							<div className="connexion">
-								<Connexion className="con-toggle" />
-							</div>
-							<div className="inscription">
-								<Inscritpion className="ins-toggle" />
-							</div>
+						<div className="d-flex gap-3">
+							<Connexion />
+							<Inscritpion />
 						</div>
 					</div>
 				</div>
-				<hr className="ms-5" />
 			</div>
 
 			<Navigation />

@@ -10,17 +10,13 @@ const Profil = () => {
 					<div className="content__coordonnees col-12 col-md-9">
 						<h2 className="h4 mb-4">Profil</h2>
 
-						<div className="contains ms-3">
+						<div className="contains">
 							<form action="" className="form-groups d-flex flex-column gap-4">
 								<div className="cadre--border flex-column">
-									<div className="fs-1">
-										<FaCloudDownloadAlt />
-									</div>
-
 									<div>
 										<input type="file" name="myImage" accept="image/*" /> <br />
-										<br />
-										<label htmlFor="file">Veuillez télécharger votre photo de profil ici</label>
+									
+										<label htmlFor="file" className='mt-2'>Veuillez télécharger votre photo de profil ici</label>
 									</div>
 								</div>
 								<div>
@@ -87,7 +83,6 @@ const Profil = () => {
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	);

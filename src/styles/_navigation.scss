@@ -1,6 +1,23 @@
 .navigation {
 
+    a {
+        position: relative;
+    }
 
+    .active {
+        color: $colorBlue;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 95%;
+            height: 3px;
+            background: $colorBlue;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 
 	
 }

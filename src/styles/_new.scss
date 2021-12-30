@@ -1,6 +1,13 @@
 .new{
     
-    h1{
+    .active {
         color: $colorBlue;
+    }
+
+
+    h1, h2 {
+        font-size: 1.5rem;
+        margin-left: 20px;
+        cursor: pointer;
     }
 }

@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { FaBabyCarriage } from 'react-icons/fa';
 import Market from '../components/Market';
 
-const Panier = () => {
+const Panier = ({count}) => {
 	const [ market, setMarket ] = useState(false);
-	const [ count, setCount ] = useState(0);
+	// const [ count, setCount ] = useState(0);
 
-	const handleCount = (e) => {
-		e.preventDefault();
-		setCount(count + 1);
-	};
+	// const handleCount = (e) => {
+	// 	e.preventDefault();
+	// 	setCount(count + 1);
+	// };
 
 	return (
 		<div className="panier">

@@ -5,7 +5,7 @@ const Market = ({ className, setMarket, market, count }) => {
 	return (
 		<div className={className}>
 			<div className="market-content">
-				<div className="conatins">
+				<div className="content">
 					<div>
 						<div className="d-flex justify-content-between p-3">
 							<h6>{count} articles</h6>

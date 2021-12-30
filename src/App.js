@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -8,10 +8,18 @@ import Categories from './pages/Categories';
 import UniqueProduit from './pages/UniqueProduit';
 import Livraison from './components/Livraison';
 import Onglets from './components/Onglets';
+import Accessoires from './components/Accessoires';
+import Chaussures from './components/Chaussures';
 
 const App = () => {
 
+// useEffect(() => {
+// 	setTimeout(() => {
 
+// 	}, 2000)
+// }, [])
+
+	
 	return (
 		<div>
 			<Routes>
@@ -22,7 +30,9 @@ const App = () => {
 				<Route exact path="/profil" element={<Onglets />} />
 
 				<Route exact path="/livraison" element={<Livraison />} />
-	 
+				<Route exact path="/accessoires" element={<Accessoires />} />
+				<Route exact path="/chaussures" element={<Chaussures />} />
+
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</div>

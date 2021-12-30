@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { AiOutlineGooglePlus } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 
-const Inscritpion = ({ className }) => {
+const Inscritpion = () => {
 	const [ toggle, setToggle ] = useState(false);
 
 	return (
-		<div className={className}>
+		<div className="inscription-toggle">
 			<button type="button" className="btn btn-primary" onClick={(e) => setToggle(!toggle)}>
-				Inscription
+				<strong>Inscription</strong>
 			</button>
 
 			<div className={toggle ? 'show modal fade ' : 'overlay'} id="overlay">

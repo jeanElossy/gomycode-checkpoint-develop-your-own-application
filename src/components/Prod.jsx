@@ -14,7 +14,7 @@ const Prod = ({ setCount }) => {
 
 	useEffect(() => {
 		AOS.init({ duration: 1000 });
-	}, [])
+	}, []);
 
 	useEffect(() => {
 		const getData = async () => {
@@ -26,21 +26,23 @@ const Prod = ({ setCount }) => {
 		};
 		getData();
 	}, []);
-	// console.log(listOfProduct);   
-
+	// console.log(listOfProduct);
 
 	return (
 		<div className="prod">
 			<div className="row">
-				{listOfProduct.map((item) => {
+				{dataProduit.map((item) => {
 					return (
-						<div className="card p-2" style={{ width: '16rem', height: '25rem' }} key={item.id} data-aos="fade-up">
+						<div
+							className="card p-2"
+							style={{ width: '16rem', height: '25rem' }}
+							key={item.id}
+							data-aos="fade-up"
+						>
 							<div className="image">
 								<img src={item.image} alt="" />
-
 							</div>
 							<h1 className="h6">{item.title}</h1>
-
 
 							<div className="mt-2">
 								<div>
@@ -66,7 +68,9 @@ const Prod = ({ setCount }) => {
 				})}
 
 				<div className="voir-plus text-center my-4">
-					<button className="btn">Voir plus</button>
+					<button className="btn" data-aos="flip-left">
+						Voir plus
+					</button>
 				</div>
 			</div>
 		</div>

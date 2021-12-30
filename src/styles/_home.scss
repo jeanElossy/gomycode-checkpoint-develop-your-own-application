@@ -61,9 +61,29 @@
 
 	// styles composant articles
 	.products {
-		.new {
-			position: relative;
-			cursor: pointer;
+		
+		.container-fluid {
+
+			.row {
+
+				.choose {
+
+					.new {
+			
+						
+						.active {
+							color: $colorBlue;
+						}
+			
+						h1,
+						h2 {
+							font-size: 1.5rem;
+							margin-left: 20px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,23 +1,16 @@
 import React, { useState } from 'react';
-
 import Articles from '../components/Articles';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 import Panier from '../components/Panier';
 
 const Home = () => {
 	const [ count, setCount ] = useState(0);
 
-
 	const handleCount = (e) => {
 		e.preventDefault();
 		setCount(count + 1);
 	};
-
-
-	
-
 
 	return (
 		<div className="home">
@@ -43,7 +36,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<Panier />
+			<Panier count={count}/>
 
 			<div className="produits container">
 				<div className="row justify-content-center gap-5">

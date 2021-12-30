@@ -3,11 +3,11 @@ import { AiOutlineGooglePlus } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-const Connexion = ({ className }) => {
+const Connexion = () => {
 	const [ toggle, setToggle ] = useState(false);
 
 	return (
-		<div className={className}>
+		<div className="connexion-toggle ">
 			<button type="button" className="btn" onClick={(e) => setToggle(!toggle)}>
 				Connexion
 			</button>
@@ -16,15 +16,15 @@ const Connexion = ({ className }) => {
 				<div className="modal-content">
 					<div>
 						<h6 className="modal-title mt-3 ms-4" id="connexion">
-							Connexion
+							<strong>Connexion</strong>
 						</h6>
 						<div>
 							<button type="button" className="btn-close" onClick={(e) => setToggle(!toggle)} />
 						</div>
 					</div>
-					<hr style={{ width: '90%', transform: 'translate(5%)' }} className="mt-2" />
+					
 					<div className="con-reseaux">
-						<div className="ms-4">
+						<div className="ms-4 mt-4">
 							Vous n'avez pas de compte ?{' '}
 							<span>
 								<a href="/" className="span">

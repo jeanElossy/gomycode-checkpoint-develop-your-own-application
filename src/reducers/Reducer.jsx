@@ -6,86 +6,86 @@ const initialState = {
 	data: [
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		},
 		{
 			id: uniqueid,
-			img: 'medias/5.png',
-			name: 'Jupe volante',
-			count1: 3500,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
 			count2: 1500
 		}
 	]
