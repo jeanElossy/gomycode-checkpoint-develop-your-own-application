@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import AOS from 'aos';
-// AOS.init();
+
 import Home from './pages/Home';
 import Vetements from './pages/Vetements';
 import NotFound from './pages/NotFound';

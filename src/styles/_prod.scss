@@ -1,10 +1,12 @@
 .prod {
+	background: rgba(180, 180, 180, 0.288);
+	border-radius: 20px;
 	.row {
-		gap: 30px;
-
+		gap: 20px;
+		padding: 20px 0 10px 25px;
 		.card {
 			border-radius: 10px;
-			height: 400px;
+		
 			button {
 				&:nth-child(1) {
 					border-radius: 10px;
@@ -22,10 +24,10 @@
 			.image {
 				transition: .4s ease-in-out;
 				text-align: center;
-
+				margin-bottom: 1rem;
 				img {
 					width: 8rem;
-					height: 9rem;
+					height: 9.5rem;
 				}
 			}
 			.image:hover {
