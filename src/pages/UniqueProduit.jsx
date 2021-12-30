@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Prod from '../components/Prod';
 import { FiShoppingBag } from 'react-icons/fi';
 import { NavLink } from 'react-router-dom';
 import Panier from '../components/Panier';
+import AOS from 'aos';
 
 const UniqueProduit = () => {
+
+
+	useEffect(() => {
+		AOS.init({ duration: 1000 });
+	}, [])
+
+
 	return (
 		<div className="details">
 			<Header />
@@ -14,10 +22,10 @@ const UniqueProduit = () => {
 			<div className="container mb-4">
 				<div className="row">
 					<div className="product col-12 col-md-7 d-flex flex-column align-items-center">
-						<div className="img">
+						<div className="img" data-aos="fade-right">
 							<img src="./medias/jupe.png" alt="jupe" />
 						</div>
-						<div className="row justify-content-center gap-4">
+						<div className="row justify-content-center gap-4" data-aos="flip-left">
 							<div className="card col-12 col-md-3">
 								<img src="./medias/jupe.png" alt="jupe" />
 							</div>
