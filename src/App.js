@@ -19,7 +19,7 @@ const App = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoarder(false)
-		}, 5000);
+		}, 2000);
 	}, []);
 
 	return loader ? <Loader /> : (

@@ -3,30 +3,34 @@ import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 
-import axios from 'axios';
+// import axios from 'axios';
 
 const Prod = ({ setCount }) => {
 	const article = useSelector((state) => state.Reducer);
 
-	const dataProduit = article.data;
+	const dataProduit = article;
 
-	const [ listOfProduct, setListOfProduct ] = useState([]);
+	
+
+	// const [ listOfProduct, setListOfProduct ] = useState([]);
 
 	useEffect(() => {
 		AOS.init({ duration: 1000 });
 	}, []);
 
-	useEffect(() => {
-		const getData = async () => {
-			const resutltat = await axios({
-				method: 'GET',
-				url: 'https://fakestoreapi.com/products'
-			});
-			setListOfProduct(resutltat.data);
-		};
-		getData();
-	}, []);
-	// console.log(listOfProduct);
+	// useEffect(() => {
+	// 	const getData = async () => {
+	// 		const resutltat = await axios({
+	// 			method: 'GET',
+	// 			url: 'https://fakestoreapi.com/products'
+	// 		});
+	// 		setListOfProduct(resutltat.data);
+	// 	};
+	// 	getData();
+	// }, []);
+	//
+
+	
 
 	return (
 		<div className="prod">
@@ -46,11 +50,11 @@ const Prod = ({ setCount }) => {
 
 							<div className="mt-2">
 								<div>
-									<span className="fw-bold">{item.price}</span> / unité
+									<span className="fw-bold">{item.price * 1000 }</span> <strong>F</strong> / unité
 								</div>
 
 								<div>
-									<span className="fw-bold">{item.count2}</span> / à partie de 5 unités
+									<span className="fw-bold">{item.price * 100}</span><strong> F</strong> / à partir de 5 unités
 								</div>
 							</div>
 

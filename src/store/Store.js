@@ -8,4 +8,4 @@ import getPost from '../actions/get.action';
 const store = createStore(rootReducers, composeWithDevTools(applyMiddleware(thunk)));
 export default store;
 
-// store.dispatch(getPost());
+store.dispatch(getPost());
