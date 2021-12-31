@@ -10,17 +10,19 @@ import Livraison from './components/Livraison';
 import Onglets from './components/Onglets';
 import Accessoires from './components/Accessoires';
 import Chaussures from './components/Chaussures';
+import Loader from "./components/Loader";
 
 const App = () => {
 
-// useEffect(() => {
-// 	setTimeout(() => {
+	const [ loader, setLoarder ] = useState(true);
 
-// 	}, 2000)
-// }, [])
+	useEffect(() => {
+		setTimeout(() => {
+			setLoarder(false)
+		}, 5000);
+	}, []);
 
-	
-	return (
+	return loader ? <Loader /> : (
 		<div>
 			<Routes>
 				<Route exact path="/" element={<Home />} />
