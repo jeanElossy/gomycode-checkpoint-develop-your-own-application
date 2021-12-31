@@ -3,34 +3,16 @@ import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 
-// import axios from 'axios';
 
 const Prod = ({ setCount }) => {
 	const article = useSelector((state) => state.Reducer);
 
-	const dataProduit = article;
-
-	
-
-	// const [ listOfProduct, setListOfProduct ] = useState([]);
+	const dataProduit = article.data;
 
 	useEffect(() => {
 		AOS.init({ duration: 1000 });
 	}, []);
 
-	// useEffect(() => {
-	// 	const getData = async () => {
-	// 		const resutltat = await axios({
-	// 			method: 'GET',
-	// 			url: 'https://fakestoreapi.com/products'
-	// 		});
-	// 		setListOfProduct(resutltat.data);
-	// 	};
-	// 	getData();
-	// }, []);
-	//
-
-	
 
 	return (
 		<div className="prod">

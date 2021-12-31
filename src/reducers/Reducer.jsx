@@ -1,94 +1,96 @@
 import { GET_POSTS } from '../actions/get.action';
-// import uniqueid from 'uniqueid';
+import uniqueid from 'uniqueid';
 
 
 const initialState = {
-	// data: [
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	},
-	// 	{
-	// 		id: uniqueid,
-	// 		image: 'medias/5.png',
-	// 		title: 'Jupe volante',
-	// 		price: 3500,
-	// 		count2: 1500
-	// 	}
-	// ]
+	
+
+	data: [
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		},
+		{
+			id: uniqueid,
+			image: 'medias/5.png',
+			title: 'Jupe volante',
+			price: 3500,
+			count2: 1500
+		}
+	]
 };
 
 const Reducer = (state = initialState, action) => {

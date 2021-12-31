@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { FaCloudDownloadAlt } from 'react-icons/fa';
-
 const Profil = () => {
 	return (
 		<div className="profil">

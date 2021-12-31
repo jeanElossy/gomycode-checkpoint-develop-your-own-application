@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Produit from './Produit';
 
 const Market = ({ className, setMarket, market, count }) => {
@@ -15,13 +16,17 @@ const Market = ({ className, setMarket, market, count }) => {
 								onClick={(e) => setMarket(!market)}
 							/>
 						</div>
+						<hr />
 						<span />
 
 						<Produit />
 					</div>
 
 					<div className="coupon">
-						<h1 className="h5 text-center">Avez-vous un coupon?</h1>
+						<NavLink to="livraison">
+							<h1 className="h5 text-center">Avez-vous un coupon?</h1>
+						</NavLink>
+
 						<div>
 							<form action="/" className="form-group">
 								<div>

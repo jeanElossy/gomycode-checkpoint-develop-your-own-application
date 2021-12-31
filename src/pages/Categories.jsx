@@ -123,6 +123,8 @@ const Categories = () => {
 				</div>
 			</div>
 
+
+			
 			<Panier />
 
 			<div className="container border border-ligth p-4 article">
