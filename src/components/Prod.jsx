@@ -4,14 +4,20 @@ import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 
 
-const Prod = ({ setCount }) => {
+const Prod = ({ setCount, handleAdd }) => {
 	const article = useSelector((state) => state.Reducer);
-
 	const dataProduit = article.data;
+
+	const [addElement, setAddElement] = useState()
+
+
+
 
 	useEffect(() => {
 		AOS.init({ duration: 1000 });
 	}, []);
+
+
 
 
 	return (
@@ -25,7 +31,7 @@ const Prod = ({ setCount }) => {
 							key={item.id}
 							data-aos="fade-up"
 						>
-							<div className="image">
+							<div className="image" onClick={handleAdd}>
 								<img src={item.image} alt="" />
 							</div>
 							<h1 className="h6">{item.title}</h1>
@@ -41,7 +47,7 @@ const Prod = ({ setCount }) => {
 							</div>
 
 							<div className="d-flex justify-content-between gap-2 mt-3">
-								<button className="btn text-white" onClick={setCount}>
+								<button className="btn text-white" onClick={setCount} >
 									Achéter
 								</button>
 
@@ -52,6 +58,8 @@ const Prod = ({ setCount }) => {
 						</div>
 					);
 				})}
+
+
 
 				<div className="voir-plus text-center my-4">
 					<button className="btn" data-aos="flip-left">

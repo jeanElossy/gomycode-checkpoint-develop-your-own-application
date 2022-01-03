@@ -2,6 +2,7 @@
 	button {
 		border: 1px solid $colorBlue;
 		color: $colorBlue;
+		font-weight: bold;
 		border-radius: 20px;
 		&:hover {
 			background: $colorBlue;
@@ -14,13 +15,14 @@
 		display: none;
         
 	}
+
 	.modal-content {
 		position: absolute;
-		top: 10%;
+		top: 7%;
 		left: 50%;
 		transform: translate(-50%, -20%);
 		width: 500px;
-		height: 420px;
+		height: 470px;
 		border-radius: 10px;
 
 		.btn-close {

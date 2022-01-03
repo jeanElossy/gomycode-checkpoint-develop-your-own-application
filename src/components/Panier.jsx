@@ -20,4 +20,6 @@ const Panier = ({count}) => {
 	);
 };
 
+
+
 export default Panier;

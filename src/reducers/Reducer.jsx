@@ -1,10 +1,8 @@
-import { GET_POSTS } from '../actions/get.action';
+import { GET_ARTICLES } from '../actions/get.action';
 import uniqueid from 'uniqueid';
 
 
 const initialState = {
-	
-
 	data: [
 		{
 			id: uniqueid,
@@ -95,7 +93,7 @@ const initialState = {
 
 const Reducer = (state = initialState, action) => {
 	switch (action.type) {
-		case GET_POSTS:
+		case GET_ARTICLES:
 			return action.payload;
 
 		default:

@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Produit = () => {
+
+	
 	return (
 		<div className="produit">
 			<div className="container">
